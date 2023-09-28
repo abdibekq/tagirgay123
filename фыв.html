@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+   
+
+    </style>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form action="process_registration.php" method="post">
+        <label for="first_name">Имя:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+
+        <label for="last_name">Фамилия:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirm_password">Подтверждение пароля:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Женский</label><br>
+
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+    <h1>Student Information Form</h1>
+    <form action="process_student_info.php" method="get" target="_blank">
+        <h2>Personal Information</h2>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+
+        <label for="date_of_birth">Date of Birth (mm/dd/yyyy):</label>
+        <input type="text" id="date_of_birth" name="date_of_birth" placeholder="mm/dd/yyyy" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label><br>
+
+        <h2>Contact Information</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea><br>
+
+        <h2>Educational Information</h2>
+        <label for="major">Major:</label>
+        <input type="text" id="major" name="major"><br>
+
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id"><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea><br>
+
+        <label for="submit_method">Submit Method:</label>
+        <input type="radio" id="get_method" name="submit_method" value="GET" required>
+        <label for="get_method">GET</label>
+        <input type="radio" id="post_method" name="submit_method" value="POST" required>
+        <label for="post_method">POST</label><br>
+
+        <button type="submit">Submit</button>
+    </form>
